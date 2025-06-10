@@ -8,8 +8,8 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity   // 데이터베이스 테이블과 매핑되는 "엔티티 클래스" 임을 나타냄
-@Table(name="item")  // @Entity로 지정한 클래스가 어떤 데이터베이스 테이블에 매핑될지를 설정, 소문자로 생성
+@Entity // 데이터베이스 테이블과 매핑되는 "엔티티 클래스" 임을 나타냄
+@Table(name="item") // @Entity로 지정한 클래스가 어떤 데이터베이스 테이블에 매핑될지를 설정, 소문자로 생성
 @Getter
 @Setter
 @ToString // toString() 오버라이드를 자동으로 해줌

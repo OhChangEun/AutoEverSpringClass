@@ -3,6 +3,7 @@ package com.hd.sample_jpa_mysql_0605.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 @Table(name = "member") // 이 엔티티가 매핑될 테이블 이름을 지정해요.
 @Getter @Setter // 자동 get(), set() 메서드 생성
 @NoArgsConstructor // 기본 생성자 자동 생성
+@ToString
 public class Member {
     @Id // @Id: 이 필드는 **기본 키(PK)**예요. 각 회원을 구별하는 고유값.
     @GeneratedValue(strategy = GenerationType.AUTO) // @GeneratedValue: 값을 자동으로 생성해줘요. (AUTO는 DB에 맞게 전략 자동 선택)
