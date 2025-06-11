@@ -7,9 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class MemberRegDto { // 회원 가입에 대한 요청
+public class LoginReqDto {
     private String email;
     private String pwd;
-    private String name;
-    private String image;
 }

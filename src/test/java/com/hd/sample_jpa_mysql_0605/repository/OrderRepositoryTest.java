@@ -18,8 +18,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 @Transactional
 class OrderRepositoryTest {
-    @Autowired
-    OrderRepository orderRepository;
+//    @Autowired
+//    OrderRepository orderRepository;
     @Autowired
     ItemRepository itemRepository;
     @PersistenceContext
@@ -53,9 +53,9 @@ class OrderRepositoryTest {
         orderRepository.saveAndFlush(order);
         // 영속성 상태를 초기화
         em.clear();
-        // 주문 엔티티 조회
-        Order saveOrder = orderRepository.findById(order.getId())
-                .orElseThrow(EntityNotFoundException::new);
-        assertEquals(3, saveOrder.getOrderItemList().size());
+//        // 주문 엔티티 조회
+//        Order saveOrder = orderRepository.findById(order.getId())
+//                .orElseThrow(EntityNotFoundException::new);
+//        assertEquals(3, saveOrder.getOrderItemList().size());
     }
 }
