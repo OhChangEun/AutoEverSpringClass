@@ -14,6 +14,5 @@ public class MemberResDto {
     private String email;
     private String pwd;
     private String name;
-    private BoardResDto image;
     private LocalDateTime regDate;
 }
